@@ -9,8 +9,11 @@ This is a Java maven project, you should import it through pom.xml file in your 
 * Maven > Existing Maven Projects
 * Browse to "booksortservice" folder looking for pom.xml file > Finish.
 
-* Package sortingservice contains application class (entry point) exception class and controller class responsible by REST method exposure.
-* Package model contains sort service input model (request JSON), sort service output model (response JSON), Book and ConfigSort model classes
+### Project packages and its contents
+* Package stormtech.com.sortservice contains application class (entry point) exception class and controller class responsible by REST method exposure.
+* Package stormtech.com.sortservice.model contains sort service input model (request JSON), sort service output model (response JSON), Book and ConfigSort model classes
+* Resources contain application.properties file
+* src.test.java package not implemented yet
 
 ## Run API service in a virtualization
 Using [Docker](https://www.docker.com/)
