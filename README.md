@@ -1,17 +1,19 @@
-## Book Sorting Service
+## Book Sorting API Service
+
+### Download or clone project to your computer
 
 This is a Java maven project, you should import it through pom.xml file in your favorite IDE.
 
-## To check source code in Eclipse IDE
-* In Eclipse: File > Import ...
+## Import source code in [Eclipse](https://www.eclipse.org/)
+* Menu File > Import ...
 * Maven > Existing Maven Projects
 * Browse to "booksortservice" folder looking for pom.xml file > Finish.
 
 * Package sortingservice contains application class (entry point) exception class and controller class responsible by REST method exposure.
 * Package model contains sort service input model (request JSON), sort service output model (response JSON), Book and ConfigSort model classes
 
-## To run API service
-Using Docker 
+## Run API service in a virtualization
+Using [Docker](https://www.docker.com/)
 * Go to jar folder
 ```sh
   $ cd booksortservice/jar
@@ -27,8 +29,9 @@ Using Docker
 The application will start and listen at http://localhost:4040/sort
 
 
-## To test service
-Using Postman
+## Testing API service 
+Using [Postman](https://www.getpostman.com/)
+
 * Need to pass as input parameter the SSInputModel which consists in a list of books and a list of sort configurations (configs attribute)
 
 The JSON should be in this format
