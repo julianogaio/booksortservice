@@ -46,4 +46,36 @@ The JSON should be in this format
 		{"column":"author", "sort": "desc"},
 		{"column":"title", "sort": "desc"}]
 }
-...
+```
+
+* The response will be a JSON based on SSOutputModel and should be something like this:
+
+```
+{
+  "sortedList": [
+    {
+      "id": "book1",
+      "title": "Java",
+      "author": "Deitel",
+      "edition": "2007"
+    },
+    {
+      "id": "book4",
+      "title": "Internet",
+      "author": "Deitel",
+      "edition": "2007"
+    },
+    {
+      "id": "book3",
+      "title": "Head",
+      "author": "Elis",
+      "edition": "2004"
+    },
+    {
+      "id": "book2",
+      "title": "Pattern",
+      "author": "Martin",
+      "edition": "2002"
+    }
+  ]
+}
