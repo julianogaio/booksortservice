@@ -32,10 +32,9 @@ The application will start and listen at http://localhost:4040/sort
 ## Testing API service 
 Using [Postman](https://www.getpostman.com/)
 
-* Need to pass as input parameter the SSInputModel which consists in a list of books and a list of sort configurations (configs attribute)
+* Need to pass as input parameter the JSON SSInputModel (java class) which consists in a list of books and a list of sort configurations (configs attribute)
 
 The JSON should be in this format
-
 ```
 { 
 	"books": [
@@ -51,8 +50,8 @@ The JSON should be in this format
 }
 ```
 
-* The response will be a JSON based on SSOutputModel and should be something like this:
 
+* The response will be a JSON based on SSOutputModel java class and would be something like this:
 ```
 {
   "sortedList": [
